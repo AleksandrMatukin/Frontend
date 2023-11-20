@@ -1,0 +1,425 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  font-family: 'Roboto', "OpenSans", sans-serif;
+  font-weight: normal;
+}
+
+.flex {
+  display: flex;
+}
+
+.list-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+:root {
+  --color-blue: #3F2AFF;
+  --color-white: #fff;
+  --color-black: #2E2B44;
+  --color-descr: #666;
+  --bc-teachers: #212133;
+  --color-descr-dark: #85859B;
+  --bc-courses: #EDF0F9;
+
+  --gap: 30px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  color: var(--color-black);
+}
+
+.section-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-descr);
+}
+
+/* fonts */
+
+@font-face {
+  font-family: 'Roboto';
+  src: local(Roboto-Bold),
+    url(../font/Roboto-Bold.woff2) format('woff2'),
+    url(../font/Roboto-Bold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: local(Roboto-Light),
+    url(../font/Roboto-Light.woff2) format('woff2'),
+    url(../font/Roboto-Light.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: local(Roboto-Regular),
+    url(../font/Roboto-Regular.woff2) format('woff2'),
+    url(../font/Roboto-Regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: local(Roboto-Medium),
+    url(../font/Roboto-Medium.woff2) format('woff2'),
+    url(../font/Roboto-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* header*/
+.header {
+  background-color: var(--color-blue);
+}
+
+.header__container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 29px;
+  padding-bottom: 30px;
+}
+
+.header__left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header__right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__logo {
+  font-size: 0;
+  cursor: pointer;
+}
+
+.nav__list {
+  gap: 56px;
+}
+
+.nav__item {
+  color: var(--color-white);
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* hero */
+.hero {
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+
+.hero__container {
+  position: relative;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.hero__content {
+  padding-top: 117px;
+  padding-bottom: 118px;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  color: var(--color-white);
+}
+
+.hero__descr {
+  max-width: 445px;
+  margin-bottom: 62px;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-white);
+}
+
+.btn {
+  background-color: var(--color-blue);
+  border-radius: 20px;
+}
+
+.hero__btn {
+  padding: 24px 75.5px;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hero__row {
+  background-image: url('../img/hero-img1440.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 97% center;
+}
+
+/* advantages */
+.advantages {
+  padding-top: 80px;
+  padding-bottom: 78px;
+}
+
+.advantages__container {
+  background-color: var(--color-white);
+}
+
+.advantages__content {
+  min-height: 142px;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-left: 205px;
+  background-repeat: no-repeat;
+  background-size: 160px 142px;
+  background-position: 15px 50%;
+  background-image: url('../img/advantages-img1440.png');
+}
+
+.advantages__title {
+  margin-bottom: 17px;
+  max-width: 380px;
+}
+
+.advantages__text {
+  max-width: 585px;
+}
+
+.advantages__depiction {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: var(--color-descr);
+}
+
+.advantages__item {
+  display: inline-flex;
+  min-height: 80px;
+  padding-left: 125px;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  background-position: 15px center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.advantage-img-1 {
+  background-image: url('../img/advantages-svg1.svg');
+}
+
+.advantage-img-2 {
+  background-image: url('../img/advantages-svg2.svg');
+}
+
+.advantage-img-3 {
+  background-image: url('../img/advantages-svg3.svg');
+}
+
+/* teachers */
+.teachers {
+  padding-top: 74px;
+  padding-bottom: 74px;
+  background-color: var(--bc-teachers);
+}
+
+.teachers__title {
+  margin-bottom: 24px;
+  color: var(--color-white);
+}
+
+.teachers__item {
+  border-radius: 23px 23px 0 0;
+  overflow: hidden;
+}
+
+.teachers__picture {
+  display: inline-block;
+  margin-bottom: 26px;
+}
+
+.teachers__name {
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: var(--color-white);
+}
+
+.teachers__descr {
+  color: var(--color-descr-dark);
+}
+
+/* courses */
+.courses {
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
+
+.courses__title {
+  margin-bottom: 23px;
+}
+
+.courses__item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+
+.courses__card {
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 480px;
+  padding: 210px 30px 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 539px 180px;
+  background-color: var(--bc-courses);
+}
+
+.courses-img-1 {
+  background-image: url('../img/courses-img1.jpg');
+}
+
+.courses-img-2 {
+  background-image: url('../img/courses-img2.jpg');
+}
+
+.courses-img-3 {
+  background-image: url('../img/courses-img3.jpg');
+}
+
+.courses-img-4 {
+  background-image: url('../img/courses-img4.jpg');
+}
+
+.courses__name {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: var(--color-black);
+}
+
+.courses__time {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  top: 11px;
+  right: 19px;
+  padding-left: 29px;
+  background-image: url('../img/courses-img-time.svg');
+  background-repeat: no-repeat;
+  background-position: 0 -1px;
+  color: var(--color-white);
+}
+
+
+.courses__btn {
+  position: absolute;
+  content: '';
+  bottom: 30px;
+/* margin-top: auto; */
+padding: 20px 60px 21px 59px;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: var(--color-white);
+}
+
+/* footer */
+.footer__top {
+  background-color: var(--color-black);
+}
+
+.footer__container {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.footer__content {
+  justify-content: center;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__bottom {
+  background-color: var(--color-white);
+}
+
+.footer__copiright {
+  display: flex;
+justify-content: center;
+font-size: 13px;
+line-height: 15px;
+text-transform: uppercase;
+color: var(--color-black);
+}
+
+.footer__or {
+  color: var(--color-blue);
+}

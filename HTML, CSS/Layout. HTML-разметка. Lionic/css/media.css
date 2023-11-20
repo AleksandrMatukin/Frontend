@@ -1,0 +1,6 @@
+@media (max-width: 992px) {
+.section__offset {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+}
